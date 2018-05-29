@@ -5,6 +5,3 @@ DOCKER_BIN=$(dirname "$0")/docker
   | tail -n +2 \
   | sed -e "s/,/ /g" \
   | sed -E "s/\s\s+/,/g"
-
-
-  docker service ls | tail -n +2 | sed -e "s/ /,/g"
